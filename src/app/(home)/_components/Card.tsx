@@ -11,7 +11,7 @@ export const Card = ({
 }: CardProps) => {
   return (
     <Link href={url}>
-      <div className="bg-card-light dark:bg-card-dark flex-1 rounded-[32px] px-11 py-14">
+      <div className="flex-1 rounded-[32px] bg-card-light px-14 py-11 dark:bg-card-dark">
         <div className="mb-8 flex h-32 w-full">
           <SvgRenderer {...images.alphabet} />
         </div>

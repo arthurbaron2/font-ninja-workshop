@@ -13,7 +13,7 @@ export default function ThemeSwitcher() {
   return (
     <button
       onClick={handleThemeChange}
-      className="bg-button-primary rounded-2xl px-6 py-4 text-white"
+      className="rounded-2xl bg-button-primary px-6 py-4 text-white"
       type="button"
     >
       Switch theme

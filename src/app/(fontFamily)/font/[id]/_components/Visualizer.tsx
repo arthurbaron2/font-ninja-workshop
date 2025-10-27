@@ -5,7 +5,7 @@ import { FontFamilyDetails } from "@/app/_types/fontFamilies.types";
 import { cva } from "class-variance-authority";
 import { useState } from "react";
 
-const buttonStyle = cva("text-medium ", {
+const buttonStyle = cva("text-medium leading-none", {
   variants: {
     isActive: {
       true: "text-button-primary",
@@ -28,7 +28,7 @@ const Visualizer = ({ family }: VisualizerProps) => {
   };
 
   return (
-    <article className="bg-card-light dark:bg-card-dark w-2/3 rounded-[32px] py-10 pl-12 pr-1.5">
+    <article className="w-2/3 rounded-[32px] bg-card-light py-10 pl-12 pr-1.5 dark:bg-card-dark">
       <div>
         <div>
           <SvgRenderer

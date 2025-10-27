@@ -12,9 +12,13 @@ export default function Layout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${inter.className} `}>
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className={`${inter.className} antialiased`}
+    >
       <head />
-      <body className="bg-background-light dark:bg-background-dark px-14 py-12 text-black dark:text-white">
+      <body className="bg-background-light px-14 py-12 text-black dark:bg-background-dark dark:text-white">
         <ThemeProvider
           defaultTheme="system"
           enableSystem

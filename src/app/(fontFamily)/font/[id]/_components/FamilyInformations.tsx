@@ -6,9 +6,11 @@ interface FamilyInformationsProps {
 
 const FamilyInformations = ({ family }: FamilyInformationsProps) => {
   return (
-    <aside className="bg-card-light dark:bg-card-dark w-1/3 rounded-[32px] px-10 py-11">
-      <h2 className="mb-4 text-2xl font-bold">{family.name}</h2>
-      <p className="text-md font-medium">From {family.foundry.name}</p>
+    <aside className="w-1/3 rounded-[32px] bg-card-light px-10 py-11 dark:bg-card-dark">
+      <h2 className="mb-4 text-2xl font-bold leading-none">{family.name}</h2>
+      <p className="text-md font-medium leading-none">
+        From {family.foundry.name}
+      </p>
     </aside>
   );
 };
